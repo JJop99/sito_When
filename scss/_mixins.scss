@@ -1,3 +1,13 @@
-@import "mixins/button-card-color";
-@import "mixins/jumbotron-color";
-@import "mixins/hr-color";
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin body-font {
+  font-family: 'Source Sans Pro';
+}

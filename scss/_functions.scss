@@ -1,8 +1,0 @@
-@function animation($name: "") {
-  $animation: map-get($animations, $name);
-  @if ($animation) {
-    @return join(map-values($animation), (), space);
-  }
-
-  @warn "Invalid animation name! Given #{$name}, possible values are #{map-keys($animations)}";
-}
