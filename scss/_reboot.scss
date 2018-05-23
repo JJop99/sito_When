@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SF Pro/SF-Pro-Display-Medium.otf');
+}
+
+*, *::before, *::after {
+  font-family: 'SF Pro Display', Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+*:focus, *:active {
+  outline: none !important;
+}
