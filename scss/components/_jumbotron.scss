@@ -1,0 +1,42 @@
+.jumbotron {
+  height: 320px;
+  border-radius: 0;
+  margin-top: 56px;
+  margin-bottom: 30px;
+  color: #f8f9fa;
+  text-align: center;
+
+  &.jumbotron-calc {
+    @include jumbotron-color("calc");
+  }
+
+  &.jumbotron-crypto {
+    @include jumbotron-color("crypto");
+  }
+
+  &.jumbotron-mongMonal {
+    @include jumbotron-color("mongMonal");
+  }
+
+  &.jumbotron-mongPoli {
+    @include jumbotron-color("mongPoli");
+  }
+
+  &.jumbotron-poliMonal {
+    @include jumbotron-color("poliMonal");
+  }
+
+  &.jumbotron-composti {
+    @include jumbotron-color("composti");
+  }
+
+  > .jumbotron-head {
+    font-size: 3.5rem;
+  }
+
+  > .jumbotron-body {
+    margin-bottom: .7rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
