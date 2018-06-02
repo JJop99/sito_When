@@ -1,0 +1,10 @@
+// Font Mixins
+@mixin body-font {
+  font-family: 'SF Pro Display';
+  
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SF Pro/SF-Pro-Display-Thin.otf');
+}
