@@ -2,10 +2,15 @@ body,
 html {
   width: 100%;
   height: 100%;
+  text-rendering:optimizeLegibility;
 }
 
 body {
   @include body-font;
+}
+
+section {
+  background: linear-gradient(180deg, #fafafa , #fff 50px);
 }
 
 // Custom Button Size
@@ -15,8 +20,8 @@ body {
 
 // Content Section
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .content-section-heading {
