@@ -10,6 +10,8 @@
 
     <title>When</title>
 
+
+
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -67,11 +69,27 @@
         </div>
 
         <div class="text-center" style="margin-top:12rem">
-          <a class="arrow js-scroll-trigger" href="#app"><i class="fa fa-angle-down"></i></a>
+          <a class="arrow js-scroll-trigger" href="#download"><i class="fa fa-angle-down"></i></a>
         </div>
       </div>
-      <div class="overlay"></div>
+
     </header>
+
+    <!-- Download -->
+    <section class="content-section bg-light" id="download">
+      <div class="container text-center">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>L'App è già disponibile per Android e iOS</h2>
+            <h4 class="pb-3 text-secondary">Scaricala ora!</h4>
+            <p>
+               <a href="#" class="btn btn-app-store m-2"><i class="fa fa-apple"></i> <span class="small">Download on the</span> <span class="big">App Store</span></a>
+               <a href="#" class="btn btn-app-store m-2"><i class="fa fa-android"></i> <span class="small">Get it on the</span> <span class="big">Play Store</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- App -->
     <section class="content-section" id="app">
@@ -81,22 +99,46 @@
           <h2 class="mb-5">L'App</h2>
         </div>
         <div class="row text-center">
-          <div class="col-lg-10 mx-auto">
-            <div class="embed-responsive embed-responsive-16by9 ">
-              <video class="embed-responsive-item " poster="" controls >
-                <source src="./img/When.mp4" type="video/mp4">
-              </video>
-
-            </div>
+          <div class="col-lg-10 mx-auto text-center copertina">
+              <img src="./img/Scimmia.png" class=" mx-auto d-block w-100" alt="Immagine non trovata.">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Tour &nbsp;<i class="fa fa-play"></i>
+              </button>
           </div>
         </div>
       </div>
 
+
+      <!-- Button trigger modal -->
+
+
+      <!-- Modal -->
+      <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('demoVideo').pause();">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="embed-responsive embed-responsive-16by9 ">
+                <video id="demoVideo" class="embed-responsive-item " poster="" controls>
+                  <source src="./img/When.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--Home-->
       <div class="container text-center mt-5 py-5">
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-            <h3 class="typography-headline"><span role="text">Semplice</span></h3>
-            <p class="typography-intro">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
+            <p class="title"><span role="text">Tutti i tuoi eventi bene in vista</span></p>
+            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
             In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
           </div>
           <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
@@ -106,28 +148,74 @@
         </div>
       </div>
 
+      <!--Schede-->
       <div class="container text-center mt-5 py-5">
         <div class="row align-items-center">
-          <div class="col-lg-5  col-md-4  col-sm-12 ">
-            <img src="./img/IPhone_X.png" class=" w-75" alt="Immagine non trovata.">
-          </div>
           <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-            <h3 class="typography-headline"><span role="text">Semplice</span></h3>
-            <p class="typography-intro">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
+            <p class="title"><span role="text">Colpo d'occhio sull'andamento delle risposte</span></h1>
+            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
             In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
+            <div class="">
+              <video id="myVideo1" oncanplay="AutoPlay(1)" class="video" poster="">
+                <source src="./img/Prova2.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </div>
 
+      <!--Dettagli-->
       <div class="container text-center mt-5 py-5">
         <div class="row align-items-center">
-          <div class="col-lg-6 offset-lg-1 col-md-6 offset-md-2 col-sm-12 offset-sm-0 mx-auto">
-            <h3 class="typography-headline"><span role="text">Semplice</span></h3>
-            <p class="typography-intro">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
+          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+            <p class="title"><span role="text">Rispondi all'invito e guarda cosa fanno gli altri</span></p>
+            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
             In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
           </div>
           <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
-            <img src="./img/IPhone_X.png" class=" w-75" alt="Immagine non trovata.">
+            <div class="">
+              <video id="myVideo2" oncanplay="AutoPlay(2)" class="video" poster="">
+                <source src="./img/Prova2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Decidi-->
+      <div class="container text-center mt-5 py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+            <p class="title"><span role="text">Se sei l'organizzatore alla scadenza decidi la data migliore</span></p>
+            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
+            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
+            <div class="">
+              <video id="myVideo3" oncanplay="AutoPlay(3)" class="video" poster="">
+                <source src="./img/Prova2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Done-->
+      <div class="container text-center mt-5 py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-5  col-md-5  col-sm-12 contenitore">
+            <div class="">
+              <video id="myVideo4" oncanplay="AutoPlay(4)" class="video" poster="">
+                <source src="./img/Prova2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+            <p class="title"><span role="text">Fatto! Semplice no?</span></p>
+            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
+            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
           </div>
         </div>
       </div>
@@ -174,21 +262,6 @@
       </div>
     </section>
 
-    <!-- Download -->
-    <section class="content-section bg-light" id="download">
-      <div class="container text-center">
-        <div class="row text-center">
-          <div class="col-lg-10 mx-auto">
-            <h2>L'App è già disponibile per Android e iOS</h2>
-            <h4 class="pb-3 text-secondary">Scaricala ora!</h4>
-            <p>
-               <a href="#" class="btn btn-app-store m-2"><i class="fa fa-apple"></i> <span class="small">Download on the</span> <span class="big">App Store</span></a>
-               <a href="#" class="btn btn-app-store m-2"><i class="fa fa-android"></i> <span class="small">Get it on the</span> <span class="big">Play Store</span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
     <!-- Map -->
@@ -235,6 +308,8 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.js"></script>
+
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
@@ -244,6 +319,22 @@
               $("#sub").addClass("opacity1");
           }, 1500);
       });
+      function AutoPlay(i){
+        var myVideo = document.getElementById('myVideo'+i);
+
+          VisSense.VisMon.Builder(VisSense(myVideo, {
+              fullyvisible: 0.75
+          }))
+          .on('fullyvisible', function() {
+              myVideo.play();
+          })
+          .on('hidden', function() {
+              myVideo.pause();
+          })
+          .build()
+          .start();
+      }
+
     </script>
 
   </body>

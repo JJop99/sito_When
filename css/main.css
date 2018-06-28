@@ -57,6 +57,36 @@
   line-height: 21px;
 }
 
+.modal-full {
+  min-width: 90%;
+  margin: auto;
+}
+
+.copertina {
+  position: relative;
+  width: 100%;
+}
+
+.copertina .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.copertina .btn:hover {
+  background-color: black;
+}
+
 .arrow {
   text-decoration: none;
   color: #adb5bd;
@@ -279,6 +309,36 @@ footer.footer .social-link:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.7rem;
+  line-height: normal;
+}
+
+.video {
+  height: 80%;
+  width: 80%;
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+
+  .video {
+    height: 100%;
+    width: 100%;
+  }
+}
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -421,7 +481,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .text-faded {

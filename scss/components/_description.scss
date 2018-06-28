@@ -1,0 +1,41 @@
+.service-icon {
+  background-color: $white;
+  color: $gray-800;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text{
+  font-size: 1.7rem;
+  line-height: normal;
+}
+
+.video{
+  height: 80%;
+  width: 80%;
+}
+
+
+@media(max-width: 992px) {
+  .title{
+    font-size: 2rem !important;
+  }
+
+  .text{
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+
+  .video{
+    height: 100%;
+    width: 100%;
+  }
+}
