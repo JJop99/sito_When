@@ -17,11 +17,7 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Material Design Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -35,9 +31,6 @@
     </a>
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Menu</a>
-        </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top"><i class="fa icon-home"></i>  Home</a>
         </li>
@@ -45,11 +38,12 @@
           <a class="js-scroll-trigger" href="#app"><i class="fa icon-screen-smartphone"></i>  L'app</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact"><i class="fa icon-people"></i>  Chi siamo</a>
-        </li>
-        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#download"><i class="fa icon-cloud-download"></i>  Download</a>
         </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="team.html"><i class="fa icon-people"></i>  Chi siamo</a>
+        </li>
+
       </ul>
     </nav>
 
@@ -69,52 +63,36 @@
         </div>
 
         <div class="text-center" style="margin-top:12rem">
-          <a class="arrow js-scroll-trigger" href="#download"><i class="fa fa-angle-down"></i></a>
+          <a class="arrow js-scroll-trigger" href="#app"><i class="fa fa-angle-down"></i></a>
         </div>
       </div>
 
     </header>
 
-    <!-- Download -->
-    <section class="content-section bg-light" id="download">
-      <div class="container text-center">
-        <div class="row text-center">
-          <div class="col-lg-10 mx-auto">
-            <h2>L'App è già disponibile per Android e iOS</h2>
-            <h4 class="pb-3 text-secondary">Scaricala ora!</h4>
-            <p>
-               <a href="#" class="btn btn-app-store m-2"><i class="fa fa-apple"></i> <span class="small">Download on the</span> <span class="big">App Store</span></a>
-               <a href="#" class="btn btn-app-store m-2"><i class="fa fa-android"></i> <span class="small">Get it on the</span> <span class="big">Play Store</span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- App -->
     <section class="content-section" id="app">
       <div class="container text-center pb-5">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Scopri</h3>
-          <h2 class="mb-5">L'App</h2>
+          <h2 class="mb-5">When</h2>
         </div>
         <div class="row text-center">
           <div class="col-lg-10 mx-auto text-center copertina">
-              <img src="./img/Scimmia.png" class=" mx-auto d-block w-100" alt="Immagine non trovata.">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Tour &nbsp;<i class="fa fa-play"></i>
+              <img src="./img/caos_1.png" class=" mx-auto d-block w-100" alt="Immagine non trovata.">
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal">
+                Play &nbsp;<i class="fa fa-play"></i>
               </button>
           </div>
         </div>
       </div>
 
 
-      <!-- Button trigger modal -->
 
 
       <!-- Modal -->
-      <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-full" role="document">
+      <div class="modal bd-example-modal-lg" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-full" role="document">
           <div class="modal-content">
 
             <div class="modal-body">
@@ -132,52 +110,68 @@
         </div>
       </div>
 
-
-      <!--Home-->
-      <div class="container text-center mt-5 py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-            <p class="title"><span role="text">Tutti i tuoi eventi bene in vista</span></p>
-            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
-            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
+      <!--Crea-->
+      <div class="container  py-1 small-top">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 col-md-6 col-sm-12 ml-lg-5">
+            <p class="title"><span role="text">Crea un evento in pochi tap</span></p>
+            <p class="text">Dai un titolo, scegli un luogo, gli invitati dai tuoi contatti e le date vedendo i tuoi impegni direttamente da When, poi fissa una scadenza per le risposte ed il gioco è fatto. Devi solo attendere.</p>
           </div>
-          <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
-            <img src="./img/IPhone_X.png" class="w-50 " alt="Immagine non trovata."><img src="./img/S9.png" class=" w-50" alt="Immagine non trovata.">
-
-          </div>
-        </div>
-      </div>
-
-      <!--Schede-->
-      <div class="container text-center mt-5 py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-            <p class="title"><span role="text">Colpo d'occhio sull'andamento delle risposte</span></h1>
-            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
-            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
-          </div>
-          <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
-            <div class="">
+          <div class="col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12 offset-sm-0 ml-lg-5">
+            <div class="text-center">
               <video id="myVideo1" oncanplay="AutoPlay(1)" class="video" poster="">
-                <source src="./img/Prova2.mp4" type="video/mp4">
+                <source src="./img/Creazione.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         </div>
       </div>
 
-      <!--Dettagli-->
-      <div class="container text-center mt-5 py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-            <p class="title"><span role="text">Rispondi all'invito e guarda cosa fanno gli altri</span></p>
-            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
-            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
+      <!--Home-->
+      <div class="container  py-1 small-top">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 col-md-6 col-sm-12 ml-lg-5">
+            <p class="title"><span role="text">Tutti i tuoi eventi bene in vista</span></p>
+            <p class="text">Riunioni di lavoro, cene, partite di calcetto, tutti i tuoi eventi raggruppati in ordine di scadenza in attesa che when raccolga le informazioni e faccia il lavoro per te.</p>
           </div>
-          <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
-            <div class="">
+          <div class="col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12 offset-sm-0 ml-lg-5">
+            <div class="text-center">
               <video id="myVideo2" oncanplay="AutoPlay(2)" class="video" poster="">
-                <source src="./img/Prova2.mp4" type="video/mp4">
+                <source src="./img/Eventi.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Rispondi-->
+      <div class="container  py-1 small-top">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 col-md-6 col-sm-12 ml-lg-5">
+            <p class="title"><span role="text">Rispondi all'invito con pochi tap</span></h1>
+            <p class="text">In un attimo rispondi alle date proposte, se sei abituato ad usare l’agenda puoi vedere gli appuntamenti già presenti senza uscire da When.</p>
+          </div>
+          <div class="col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12 offset-sm-0 ml-lg-5">
+            <div class="text-center">
+              <video id="myVideo3" oncanplay="AutoPlay(3)" class="video" poster="">
+                <source src="./img/Eventi.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Andamento-->
+      <div class="container  py-1 small-top">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 col-md-6 col-sm-12 ml-lg-5">
+            <p class="title"><span role="text">Colpo d'occhio sull'andamento dell'organizzazione</span></p>
+            <p class="text">In un attimo puoi controllare come stanno rispondendo gli altri invitati e se serve, cambiare idea.</p>
+          </div>
+          <div class="col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12 offset-sm-0 ml-lg-5">
+            <div class="text-center">
+              <video id="myVideo4" oncanplay="AutoPlay(4)" class="video" poster="">
+                <source src="./img/Eventi.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -185,87 +179,72 @@
       </div>
 
       <!--Decidi-->
-      <div class="container text-center mt-5 py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-            <p class="title"><span role="text">Se sei l'organizzatore alla scadenza decidi la data migliore</span></p>
-            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
-            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
+      <div class="container  py-1 small-top">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 col-md-6 col-sm-12 ml-lg-5">
+            <p class="title"><span role="text">Se sei l'organizzatore, alla scadenza decidi la data migliore</span></p>
+            <p class="text">Alla scadenza vedi come è andata e fissa la data che ha riscosso più consensi. Adesso nei calendari di tutti gli invitati rimarrà solo l’evento giusto.</p>
           </div>
-          <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 offset-sm-0">
-            <div class="">
-              <video id="myVideo3" oncanplay="AutoPlay(3)" class="video" poster="">
-                <source src="./img/Prova2.mp4" type="video/mp4">
+          <div class="col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12 offset-sm-0 ml-lg-5">
+            <div class="text-center">
+              <video id="myVideo5" oncanplay="AutoPlay(5)" class="video" poster="">
+                <source src="./img/Eventi.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         </div>
       </div>
 
-      <!--Done-->
-      <div class="container text-center mt-5 py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-5  col-md-5  col-sm-12 contenitore">
-            <div class="">
-              <video id="myVideo4" oncanplay="AutoPlay(4)" class="video" poster="">
-                <source src="./img/Prova2.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+      <!--Fatto-->
+      <div class="container  py-1 small-top">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 col-md-6 col-sm-12 ml-lg-5">
             <p class="title"><span role="text">Fatto! Semplice no?</span></p>
-            <p class="text">Se prima assumere una segretaria era l'unico modo per non perderti in telefonate senza fine o chat piene di messaggi inutili e fastidiosi, ora puoi dire addio a tutto ciò grazie a When.
-            In pochi tap When permette di organizzare tutti i tuoi impegni, devi scegliere semplicementi quando e chi invitare per l'evento, al resto pensa When.</p>
+            <p class="text">Ricordi quante telefonate, mail, attese? Non ti preoccupare, adesso c’è When.</p>
+          </div>
+          <div class="col-lg-4 offset-lg-2 col-md-4 offset-md-2 col-sm-12 offset-sm-0 ml-lg-5">
+            <div class="text-center">
+              <video id="myVideo6" oncanplay="AutoPlay(6)" class="video" poster="">
+                <source src="./img/Eventi.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </div>
+
     </section>
 
-    <!-- Chi siamo -->
-    <section class="content-section text-center" id="contact">
+    <!-- Download -->
+    <section class="content-section bg-light" id="download">
       <div class="container">
-        <div class="content-section-heading">
-          <h2 class="mb-5">Il Team</h2>
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>Scarica ora!</h2>
+            <h5 class="pb-3 text-secondary">gratis</h5>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 mb-5 ">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-                <img src="./img/Luca.svg" class="h-100 logo" alt="Immagine non trovata.">
-            </span>
-            <h5>
-              Luca Jop
-            </h5>
-            <h4 class="text-secondary">CEO</h4>
-            <p class="mb-0">luca.jop@when.com</p>
+        <div class="row text-center">
+          <div class="col-md-4 ml-auto">
+
+               <a href="https://itunes.apple.com/it/app/assistente-google/id1220976145?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/it-it/appstore-lrg.svg) no-repeat;width:201px;height:60px;background-size:contain;"></a>
+
           </div>
-          <div class="col-lg-4 mb-5 ">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <img src="./img/Davide.svg" class="h-100 logo" alt="Immagine non trovata.">
-            </span>
-            <h5>
-              Davide Perino
-            </h5>
-            <h4 class="text-secondary">CTO</h4>
-            <p class=" mb-0">davide.perino@when.com</p>
+          <div class="col-md-4 mr-auto">
+
+               <a href='https://play.google.com/store/apps/details?id=com.google.android.apps.googleassistant&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='./img/google-play-badge.png' style="width:201px;height:60px;background-size:contain;"/></a>
+
           </div>
-          <div class="col-lg-4 mb-5 ">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <img src="./img/Mumble.svg" class="h-100 logo" alt="Immagine non trovata.">
-            </span>
-            <h5>
-              Mumble
-            </h5>
-            <h4 class="text-secondary">Developers</h4>
-            <p class=" mb-0">mumble.......@when.com</p>
+
+        </div>
+
           </div>
         </div>
       </div>
     </section>
-
 
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <section id="contact" class="map" style="box-shadow: 0px 1px 5px #adb5bd, 0px -1px 5px #adb5bd;">
       <iframe id="map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26265961.396167792!2d-15.147186055285191!3d43.592505347923264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4eaa35e2ac7%3A0xb9dd04b1d9b5bb8e!2sVia+D&#39;Azeglio%2C+Bologna+BO!5e0!3m2!1sit!2sit!4v1530207312483"></iframe>
       <br/>
       <small>
@@ -274,33 +253,103 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
-              <i class="icon-social-facebook"></i>
+    <footer class="page-footer font-small blue-grey lighten-5 ">
+
+
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+
+        <div class="row mt-3 dark-grey-text">
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">When</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 30px;">
+            <p>Here you can use rows and columns here to organize your footer content.</p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Downloads</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 30px;">
+            <p>
+              <a class="dark-grey-text" href="#!">Versione iOS</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Versione Android</a>
+            </p>
+
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Link utili</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 30px;">
+            <p>
+              <a class="dark-grey-text" href="team.html">Team</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Privacy </a>
+            </p>
+
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 30px;">
+            <p>
+              <i class="fa fa-home mr-3"></i> Via D'Azeglio, BO 13, IT</p>
+            <p>
+              <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+            <p>
+              <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+
+          </div>
+
+        </div>
+
+        <div class="row py-4 d-flex align-items-center">
+          <div class="col-12 text-center">
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook white-text mr-4"> </i>
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
-              <i class="icon-social-twitter"></i>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter white-text mr-4"> </i>
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="#">
-              <i class="icon-social-github"></i>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus white-text mr-4"> </i>
             </a>
-          </li>
-        </ul>
-        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fa fa-linkedin white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram white-text"> </i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-black-50 py-3">
+        <p class="text-muted small mb-0">Copyright &copy; When 2018</p>
+      </div>
+
     </footer>
+    <!-- Footer -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -310,33 +359,9 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-          setTimeout(function(){
-              $("#sub").addClass("opacity1");
-          }, 1500);
-      });
-      function AutoPlay(i){
-        var myVideo = document.getElementById('myVideo'+i);
+    <!-- Custom scripts -->
+    <script src="js/stylish-portfolio.js"></script>
 
-          VisSense.VisMon.Builder(VisSense(myVideo, {
-              fullyvisible: 0.75
-          }))
-          .on('fullyvisible', function() {
-              myVideo.play();
-          })
-          .on('hidden', function() {
-              myVideo.pause();
-          })
-          .build()
-          .start();
-      }
-
-
-
-    </script>
 
   </body>
 

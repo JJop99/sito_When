@@ -13,6 +13,10 @@ section {
   background: linear-gradient(180deg, #fafafa , #fff 50px);
 }
 
+a:hover{
+  cursor: pointer; 
+}
+
 // Custom Button Size
 .btn-xl {
   padding: 1.25rem 2.5rem;

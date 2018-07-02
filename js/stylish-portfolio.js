@@ -8,7 +8,7 @@
     $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
     $(this).toggleClass("active");
   });
-  
+
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -63,3 +63,28 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+
+
+//Autoplay video on phones
+function AutoPlay(i){
+  var myVideo = document.getElementById('myVideo'+i);
+
+    VisSense.VisMon.Builder(VisSense(myVideo, {
+        fullyvisible: 0.75
+    }))
+    .on('fullyvisible', function() {
+        myVideo.play();
+    })
+    .on('hidden', function() {
+        myVideo.pause();
+    })
+    .build()
+    .start();
+}
+
+//Home logo animation
+$(document).ready(function(){
+    setTimeout(function(){
+        $("#sub").addClass("opacity1");
+    }, 1500);
+});

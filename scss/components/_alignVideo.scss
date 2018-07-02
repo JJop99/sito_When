@@ -1,7 +1,14 @@
 .modal-full {
-    min-width: 90%;
+    min-width: 80%;
     margin: auto;
 }
+
+.modal-content{
+  border-radius: 0;
+  border: none;
+}
+
+
 
 .copertina {
     position: relative;
@@ -10,21 +17,18 @@
 
 
 .copertina .btn {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-    text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-align: center;
 }
 
-.copertina .btn:hover {
-    background-color: black;
+.btn-outline-dark{
+  background-color: white;
 }

@@ -8,9 +8,14 @@
   background: $white;
   background-size: cover;
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: lighter;
     margin: 0;
     padding: 0;
+  }
+  h6{
+    color: $gray-600;
+    font-size: 1.1rem
   }
 
 }
