@@ -88,3 +88,25 @@ $(document).ready(function(){
         $("#sub").addClass("opacity1");
     }, 1500);
 });
+
+//Popover Footer
+$('body').on('click', function (e) {
+  $('[data-toggle=popover]').each(function () {
+      // hide any open popovers when the anywhere else in the body is clicked
+      if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+          $(this).popover('hide');
+      }
+  });
+});
+
+$("[data-toggle=popover]").mousedown(function(){
+// toggle popover when link is clicked
+$(this).popover('toggle');
+});
+
+$("[data-toggle=popover]").draggable({
+stop:function(){
+  // show popover when drag stops
+  $(this).popover('show');
+}
+});
