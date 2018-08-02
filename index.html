@@ -88,10 +88,25 @@
         </div>
       </div>
 
+      <!-- Modal -->
+      <div class="modal bd-example-modal-lg" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+          <div class="modal-content">
 
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('demoVideo').pause();">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="embed-responsive embed-responsive-16by9 ">
+                <video id="demoVideo" class="embed-responsive-item " poster="" controls>
+                  <source src="./img/When.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
 
-
-    
+          </div>
+        </div>
+      </div>
 
       <!--Crea-->
       <div class="container  py-1 small-top">
