@@ -10,8 +10,6 @@
 
     <title>When</title>
 
-
-
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -54,12 +52,12 @@
     <header class="masthead h-100 d-flex align-items-center">
       <div class="container h-100" >
         <div class="row h-100 alignment align-items-center">
-          <div class="col-5  pocket small">
-            <img src="./img/Logo When.svg" class="h-100 logo" alt="Immagine non trovata.">
+          <div id="logo" class="col-5 col-md-3 offset-md-2 pocket small">
+
           </div>
           <div class="col-7  small">
-            <h1 class="mb-1 pull">When</h1>
-            <h6 id="sub" class="magic opacity0">
+            <h1 id="sub1" class="mb-1 pull opacity0">When</h1>
+            <h6 id="sub2" class="magic opacity0">
               <em>L'idea Italiana per organizzare i tuoi impegni in pochi tap </em>
             </h6>
           </div>
@@ -75,41 +73,10 @@
 
     <!-- App -->
     <section class="content-section" id="app">
-      <div class="container text-center pb-5">
+      <div class="container text-center">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Scopri</h3>
-          <h2 class="mb-5">When</h2>
-        </div>
-        <div class="row text-center">
-          <div class="col-lg-10 mx-auto text-center copertina">
-              <img src="./img/caos_1.png" class=" mx-auto d-block w-100" alt="Immagine non trovata.">
-              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal">
-                Play &nbsp;<i class="fa fa-play"></i>
-              </button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- Modal -->
-      <div class="modal bd-example-modal-lg" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-full" role="document">
-          <div class="modal-content">
-
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('demoVideo').pause();">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <div class="embed-responsive embed-responsive-16by9 ">
-                <video id="demoVideo" class="embed-responsive-item " poster="" controls>
-                  <source src="./img/When.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-          </div>
+          <h2 class="">When</h2>
         </div>
       </div>
 
@@ -330,7 +297,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.js"></script>
 
     <!-- Custom scripts -->
-    <script src="js/stylish-portfolio.js"></script>
+    <script src="js/bodymovin.js" type="text/javascript"></script>
+    <script src="js/functions.js"></script>
+
 
 
   </body>

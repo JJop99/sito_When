@@ -145,10 +145,6 @@ a:focus {
   font-size: 1.1rem;
 }
 
-.logo {
-  float: right;
-}
-
 .pocket {
   height: 150px;
   background-color: #fff;
@@ -159,11 +155,11 @@ a:focus {
 
 @keyframes slideInFromLeft {
   0% {
-    -webkit-transform: translateX(-60%);
-    -moz-transform: translateX(-60%);
-    -ms-transform: translateX(-60%);
-    -o-transform: translateX(-60%);
-    transform: translateX(-60%);
+    -webkit-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -o-transform: translateX(-45%);
+    transform: translateX(-45%);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -182,20 +178,20 @@ a:focus {
   }
 }
 .pull {
-  -webkit-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  -moz-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  -ms-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  -o-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -moz-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -ms-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -o-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  animation: 1.5s ease-out 2s 1 slideInFromLeft;
   z-index: -1;
 }
 
 .magic {
-  -webkit-animation: 2s ease-out 1.5s 1 magic;
-  -moz-animation: 2s ease-out 1.5s 1 magic;
-  -ms-animation: 2s ease-out 1.5s 1 magic;
-  -o-animation: 2s ease-out 1.5s 1 magic;
-  animation: 2s ease-out 1.5s 1 magic;
+  -webkit-animation: 2s ease-out 4s 1 magic;
+  -moz-animation: 2s ease-out 4s 1 magic;
+  -ms-animation: 2s ease-out 4s 1 magic;
+  -o-animation: 2s ease-out 4s 1 magic;
+  animation: 2s ease-out 4s 1 magic;
   z-index: 1;
 }
 
@@ -350,14 +346,57 @@ a:focus {
   box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 992px) {
+.description {
+  line-height: inherit;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
   .service-icon {
     height: 5rem;
     width: 5rem;
   }
+
+  .description {
+    line-height: inherit;
+    font-size: 1rem;
+  }
 }
 @font-face {
-  font-family: 'SF-Pro-Display';
+  font-family: 'SF-Pro-Display-Light';
+  src: url("../fonts/SF Pro/SF-Pro-Display-Light.otf");
+  speak: none;
+  font-style: normal;
+  font-weight: lighter;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  src: url("../fonts/SF Pro/SF-Pro-Display-Regular.otf");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'SF-Pro-Display-Bold';
+  src: url("../fonts/SF Pro/SF-Pro-Display-Bold.otf");
+  speak: none;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'SF-Pro-Display-Thin';
   src: url("../fonts/SF Pro/SF-Pro-Display-Thin.otf");
   speak: none;
   font-style: normal;
@@ -367,50 +406,6 @@ a:focus {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-/*
-// Font Mixins
-@mixin body-font {
-  font-family: 'SF-Pro-Display-Light';
-  font-family: 'SF-Pro-Display-Regular';
-  font-family: 'SF-Pro-Display-Bold';
-}
-
-@font-face {
-  font-family: 'SF-Pro-Display-Light';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Light.otf') font-weight-light;
-
-  speak: none;
-  font-style: normal;
-  font-weight: lighter;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'SF-Pro-Display-Regular';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Regular.otf') font-weight-regular;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'SF-Pro-Display-Bold';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Bold.otf') font-weight-bold;
-  speak: none;
-  font-style: normal;
-  font-weight: bold;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}*/
 body,
 html {
   width: 100%;
@@ -419,7 +414,11 @@ html {
 }
 
 body {
-  font-family: 'SF-Pro-Display';
+  font-family: 'SF-Pro-Display-Light';
+  font-family: 'SF-Pro-Display-Regular';
+  font-family: 'SF-Pro-Display-Bold';
+  font-family: 'SF-Pro-Display-Thin';
+  font-family: 'SF-Pro-Display-Thin';
 }
 
 section {

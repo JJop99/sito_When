@@ -7,6 +7,7 @@ html {
 
 body {
   @include body-font;
+  font-family: 'SF-Pro-Display-Thin';
 }
 
 section {
@@ -14,7 +15,7 @@ section {
 }
 
 a:hover{
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 // Custom Button Size

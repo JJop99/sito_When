@@ -20,25 +20,22 @@
 
 }
 
-.logo{
-  float:right;
-}
-
 .pocket {
   height: 150px;
   background-color: #fff;
   border-right: 1px solid $gray-200;
   position: relative;
   z-index: 10;
+
 }
 
 @keyframes slideInFromLeft {
   0% {
-    -webkit-transform: translateX(-60%);
-    -moz-transform: translateX(-60%);
-    -ms-transform: translateX(-60%);
-    -o-transform: translateX(-60%);
-    transform: translateX(-60%);
+    -webkit-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -o-transform: translateX(-45%);
+    transform: translateX(-45%);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -59,20 +56,20 @@
 }
 
 .pull {
-  -webkit-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  -moz-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  -ms-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  -o-animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -moz-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -ms-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -o-animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  animation: 1.5s ease-out 2s 1 slideInFromLeft;
   z-index: -1;
 }
 
 .magic{
-  -webkit-animation: 2s ease-out 1.5s 1 magic;
-  -moz-animation: 2s ease-out 1.5s 1 magic;
-  -ms-animation: 2s ease-out 1.5s 1 magic;
-  -o-animation: 2s ease-out 1.5s 1 magic;
-  animation: 2s ease-out 1.5s 1 magic;
+  -webkit-animation: 2s ease-out 4s 1 magic;
+  -moz-animation: 2s ease-out 4s 1 magic;
+  -ms-animation: 2s ease-out 4s 1 magic;
+  -o-animation: 2s ease-out 4s 1 magic;
+  animation: 2s ease-out 4s 1 magic;
   z-index: 1;
 }
 

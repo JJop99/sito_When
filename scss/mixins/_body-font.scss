@@ -1,31 +1,17 @@
 // Font Mixins
 @mixin body-font {
-  font-family: 'SF-Pro-Display';
-}
-
-@font-face {
-  font-family: 'SF-Pro-Display';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Thin.otf');
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-/*
-// Font Mixins
-@mixin body-font {
   font-family: 'SF-Pro-Display-Light';
   font-family: 'SF-Pro-Display-Regular';
   font-family: 'SF-Pro-Display-Bold';
+  font-family: 'SF-Pro-Display-Thin';
 }
+
+
+
 
 @font-face {
   font-family: 'SF-Pro-Display-Light';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Light.otf') font-weight-light;
+  src: url('../fonts/SF Pro/SF-Pro-Display-Light.otf') ;
 
   speak: none;
   font-style: normal;
@@ -38,7 +24,7 @@
 
 @font-face {
   font-family: 'SF-Pro-Display-Regular';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Regular.otf') font-weight-regular;
+  src: url('../fonts/SF Pro/SF-Pro-Display-Regular.otf') ;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -50,7 +36,7 @@
 
 @font-face {
   font-family: 'SF-Pro-Display-Bold';
-  src: url('../fonts/SF Pro/SF-Pro-Display-Bold.otf') font-weight-bold;
+  src: url('../fonts/SF Pro/SF-Pro-Display-Bold.otf') ;
   speak: none;
   font-style: normal;
   font-weight: bold;
@@ -58,4 +44,16 @@
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-}*/
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Thin';
+  src: url('../fonts/SF Pro/SF-Pro-Display-Thin.otf');
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
