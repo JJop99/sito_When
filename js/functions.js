@@ -44,14 +44,7 @@
 })(jQuery); // End of use strict
 
 
-//Logo animation
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById('logo'),
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'img/when.json'
-})
+
 
 
 // Disable Google Maps scrolling
@@ -96,12 +89,30 @@ function AutoPlay(i){
 //Home logo animation
 $(document).ready(function(){
     setTimeout(function(){
-        $("#sub1").addClass("opacity1");
-    }, 2000);
+      //Logo animation
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('logo'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'img/when.json'
+      })
+    }, 0000);
+
     setTimeout(function(){
-        $("#sub2").addClass("opacity1");
-    }, 4000);
+        $("#sub1").removeClass("opacity0");
+    }, 2000);
+
+    setTimeout(function(){
+        $("#sub2").removeClass("opacity0");
+    }, 3000);
+
+    setTimeout(function(){
+        $("#logo").removeClass("line");
+    }, 3500);
 });
+
+
 
 //Popover Footer
 $('body').on('click', function (e) {
