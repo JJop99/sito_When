@@ -101,11 +101,11 @@ $(document).ready(function(){
 
     setTimeout(function(){
         $("#sub1").removeClass("opacity0");
-    }, 1500);
+    }, 1000);
 
     setTimeout(function(){
         $("#sub2").removeClass("opacity0");
-    }, 3000);
+    }, 2000);
 
     setTimeout(function(){
         $("#logo").removeClass("line");
