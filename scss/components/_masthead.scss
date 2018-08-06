@@ -59,11 +59,11 @@
 }
 
 .pull {
-  -webkit-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  -moz-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  -ms-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  -o-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -webkit-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  -moz-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  -ms-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  -o-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
   z-index: -1;
 }
 

@@ -101,7 +101,7 @@ $(document).ready(function(){
 
     setTimeout(function(){
         $("#sub1").removeClass("opacity0");
-    }, 2000);
+    }, 1500);
 
     setTimeout(function(){
         $("#sub2").removeClass("opacity0");

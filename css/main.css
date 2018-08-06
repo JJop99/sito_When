@@ -6,6 +6,7 @@
     transform: translateY(-15px);
   }
 }
+
 .slide-up-down {
   animation: 0.75s ease-in-out 0s infinite alternate none running slideUpDown !important;
 }
@@ -181,11 +182,11 @@ a:focus {
   }
 }
 .pull {
-  -webkit-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  -moz-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  -ms-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  -o-animation: 1.5s ease-out 2s 1 slideInFromLeft;
-  animation: 1.5s ease-out 2s 1 slideInFromLeft;
+  -webkit-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  -moz-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  -ms-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  -o-animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
+  animation: 1.5s ease-out 1.5s 1 slideInFromLeft;
   z-index: -1;
 }
 
@@ -345,6 +346,10 @@ a:focus {
   box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+  height: 120px;
+}
+
 .description {
   line-height: inherit;
   font-size: 1.25rem;
@@ -359,6 +364,10 @@ a:focus {
   .description {
     line-height: inherit;
     font-size: 1rem;
+  }
+
+  .logo {
+    height: 100px;
   }
 }
 @font-face {
