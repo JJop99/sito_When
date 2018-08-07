@@ -1,6 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
+
   // Closes the sidebar menu
   $(".menu-toggle").click(function(e) {
     e.preventDefault();
@@ -24,12 +25,14 @@
     }
   });
 
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");
     $(".menu-toggle").removeClass("active");
     $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
   });
+
 
   // Scroll to top button appear
   $(document).scroll(function() {
@@ -42,9 +45,6 @@
   });
 
 })(jQuery); // End of use strict
-
-
-
 
 
 // Disable Google Maps scrolling
@@ -86,6 +86,7 @@ function AutoPlay(i){
     .start();
 }
 
+
 //Home logo animation
 $(document).ready(function(){
     setTimeout(function(){
@@ -111,7 +112,6 @@ $(document).ready(function(){
         $("#logo").removeClass("line");
     }, 3500);
 });
-
 
 
 //Popover Footer
