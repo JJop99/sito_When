@@ -114,6 +114,14 @@ $(document).ready(function(){
 });
 
 
+
+
+
+
+
+
+
+
 //Popover Footer
 $('body').on('click', function (e) {
   $('[data-toggle=popover]').each(function () {
